@@ -1,0 +1,18 @@
+Package: msftBuildingFootprints
+Title: Download and Process Microsoft Data's Open Building Footprint Data Set
+Version: 0.0.0.9000
+Authors@R: 
+    person("Logan", "Piepmeier", , "loganap@uw.edu", role = c("aut", "cre"))
+Description: The primary package function is get_buildings, which handles downloading and unzipping data from Microsoft, loading it into R as an `sf` data frame, optionally filtering it by county, and optionally converting building footprints to centroids.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
+Imports: 
+    dplyr,
+    glue,
+    magrittr,
+    sf,
+    stringr,
+    tigris,
+    utils
