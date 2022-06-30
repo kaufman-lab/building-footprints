@@ -47,7 +47,7 @@ get_buildings <- function(state = unique(tigris::fips_codes$state), county_fips 
   # Filter to counties or tracts if needed
   if(!is.null(county_fips)){
     bldgs <- sf::st_join(bldgs, county, sf::st_intersects) %>%
-      dplyr::filter(substr(county_fips, 3, 5) == .env$county_fips)
+      dplyr::filter(substr(county_fips, 3, 5) %in% .env$county_fips)
   }
 
   # Find centroid if needed
