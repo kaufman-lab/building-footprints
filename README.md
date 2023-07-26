@@ -8,8 +8,8 @@
 You can install this from [GitHub](https://github.com/) with:
 
 ``` r
-# install.packages("devtools")
-devtools::install_github("kaufman-lab/building-footprints")
+install.packages("devtools") # if needed
+devtools::install_github("kaufman-lab/msftBuildingFootprints")
 ```
 
 Downloads building footprints from the open [Microsoft Maps data
